@@ -62,12 +62,15 @@ body {
   gap: 2rem;
 }
 
+.color-box-container {
+  width: 100%;
+}
 .color-box-container p {
   margin-bottom: 0.5rem;
 }
 
 .color-box {
-  width: 200px;
+  width: 100%;
   height: 200px;
 }
 
@@ -89,8 +92,8 @@ body {
   border-radius: 0.5rem;
 }
 .color-options button {
-  width: 80px;
-  height: 130px;
+  width: 100px;
+  height: 100px;
   border-radius: 4rem;
   border: none;
   cursor: pointer;
@@ -212,7 +215,7 @@ body {
     font-size: 1.5rem;
   }
   .color-box {
-    width: 100px;
+    width: 100%;
     height: 100px;
   }
 
@@ -222,8 +225,8 @@ body {
   }
 
   .color-options button {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
   }
 
   .game-box {
