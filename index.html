@@ -15,22 +15,28 @@
             <div class="color-container">
               <div class="color-box-container">
                 <p>Color Box</p>
-                <div class="color-box"></div>
+                <div data-testid="colorBox" class="color-box"></div>
               </div>
               <div class="options-container">
                 <p>Options</p>
-                <div class="color-options"></div>
+                <div data-testid="colorOption" class="color-options"></div>
               </div>
             </div>
-            <div class="status"></div>
+            <div class="status" data-testid="gameStatus"></div>
             <p class="score-display">
               Score: <span id="score" data-testid="score">0</span>
             </p>
 
-            <button class="reset-btn" onclick="resetGame()">New Game</button>
+            <button
+              data-testid="newGameButton"
+              class="reset-btn"
+              onclick="resetGame()"
+            >
+              New Game
+            </button>
           </div>
 
-          <div class="instructions">
+          <div class="instructions" data-testid="gameInstructions">
             <button class="menu-btn">
               <img src="./chevron_right.svg" alt="" />
             </button>
