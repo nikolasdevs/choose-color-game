@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Guessing Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="game-container">
+        <h1 class="header">Guess the Correct Color!</h1>
+        <div class="the-game">
+          <div class="game-box">
+            <div class="color-container">
+              <div class="color-box-container">
+                <p>Color Box</p>
+                <div class="color-box"></div>
+              </div>
+              <div class="options-container">
+                <p>Options</p>
+                <div class="color-options"></div>
+              </div>
+            </div>
+            <div class="status"></div>
+            <p class="score-display">
+              Score: <span id="score" data-testid="score">0</span>
+            </p>
+
+            <button class="reset-btn" onclick="resetGame()">Reset Game</button>
+          </div>
+
+          <div class="instructions">
+            <button class="menu-btn">
+              <img src="./chevron_right.svg" alt="" />
+            </button>
+            <h2>Instructions</h2>
+            <div class="instruction-box">
+              <p>
+                <strong>Objective:</strong> Guess the correct color that matches
+                the color displayed in the color box.
+              </p>
+              <p class="how-to-play">How to Play:</p>
+              <ol>
+                <li>Click on one of the color buttons below the color box.</li>
+                <li>
+                  If you guess correctly, your score will increase, and a
+                  success message will appear.
+                </li>
+                <li>
+                  If you guess incorrectly, a message will prompt you to try
+                  again.
+                </li>
+                <li>
+                  The game will automatically start a new round after a correct
+                  guess.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
